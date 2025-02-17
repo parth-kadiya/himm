@@ -1,0 +1,146 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+}
+
+/* HEADER DESIGN */
+header {
+    width: 100%;
+}
+
+.top-bar {
+    background: orange;
+    height: 10px;
+    width: 100%;
+}
+
+.main-header {
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+    width: 120px;
+    height: auto;
+}
+
+/* LOGIN CONTAINER */
+.login-container {
+    width: 400px;
+    background: #003d1e;
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    
+    /* 🟢 Centering the box */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.tab-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    align-items: center;
+}
+
+.tab-btn {
+    background: orange;
+    border: none;
+    padding: 10px;
+    width: 45%;
+    font-size: 16px;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px 8px 8px 8px;
+    transition: 0.3s;
+}
+
+.tab-space {
+    width: 10px;  /* Space added between buttons */
+}
+
+.tab-btn:hover, .tab-btn.active {
+    background: darkorange;
+}
+
+.form {
+    display: none;
+}
+
+.form.active {
+    display: block;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.icon {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+input {
+    border: none;
+    background: transparent;
+    outline: none;
+    color: black;
+    flex: 1;
+    font-size: 16px;
+}
+
+.login-btn {
+    background: orange;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    width: 100%;
+    font-size: 18px;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.login-btn:hover {
+    background: darkorange;
+}
+
+/* FOOTER DESIGN */
+footer {
+    width: 100%;
+    margin-top: auto;
+}
+
+.footer-content {
+    background: #003d1e;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+}
+
+.bottom-bar {
+    background: orange;
+    height: 10px;
+    width: 100%;
+}

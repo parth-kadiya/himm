@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Full screen height */
+    background-color: #f4f4f4;
+    overflow: hidden; /* Remove scrolling */
+}
+
+/* HEADER DESIGN */
+header {
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.top-bar {
+    background: orange;
+    height: 10px;
+    width: 100%;
+}
+
+.main-header {
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+    width: 120px;
+    height: auto;
+}
+
+/* MAIN CONTAINER */
+.main-container {
+    display: flex;
+    flex-grow: 1;
+    width: 100%;
+    overflow: hidden; /* Prevent scrolling */
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%; /* Ensures full height within available space */
+}
+
+.image-container img {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain; /* Ensures full visibility without cropping */
+}
+
+.next-btn {
+    position: fixed;
+    bottom: 60px;  /* Footer ke upar thoda space dene ke liye */
+    right: 20px;   /* Bottom-right corner */
+    background: orange;
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.next-btn:hover {
+    background: darkorange;
+}
+
+/* FOOTER DESIGN */
+footer {
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.footer-content {
+    background: #003d1e;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.bottom-bar {
+    background: orange;
+    height: 10px;
+    width: 100%;
+}

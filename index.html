@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MR Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- Header -->
+    <header>
+        <div class="top-bar"></div>
+        <div class="main-header">
+            <img src="Himalaya_Logo.png" alt="Himalaya Logo" class="logo">  
+        </div>
+    </header>
+
+    <div class="login-container">
+        <div class="tab-buttons">
+            <button class="tab-btn active" onclick="showForm('login')">Login</button>
+            <div class="tab-space"></div>
+            <button class="tab-btn" onclick="showForm('register')">Register</button>
+        </div>
+        <div class="content">
+            <!-- Himalaya Renalka image removed -->
+
+            <!-- Login Form -->
+            <form id="login-form" class="form active">
+                <div class="input-group">
+                    <span class="icon">&#128100;</span>
+                    <input type="text" placeholder="User ID" required>
+                </div>
+                <div class="input-group">
+                    <span class="icon">&#128274;</span>
+                    <input type="password" placeholder="User Password" required>
+                </div>
+                <button type="submit" class="login-btn" onclick="window.location.href='2.html'">Log in</button>
+            </form>
+
+            <!-- Register Form -->
+            <form id="register-form" class="form">
+                <div class="input-group">
+                    <span class="icon">&#128100;</span>
+                    <input type="text" placeholder="Full Name" required>
+                </div>
+                <div class="input-group">
+                    <span class="icon">&#128231;</span>
+                    <input type="email" placeholder="Email" required>
+                </div>
+                <div class="input-group">
+                    <span class="icon">&#128274;</span>
+                    <input type="password" placeholder="Create Password" required>
+                </div>
+                <button type="submit" class="login-btn" onclick="window.location.href='2.html'">Register</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">© 2025 Himalaya MR Portal</div>
+        <div class="bottom-bar"></div>
+    </footer>
+
+    <script defer src="script.js"></script>
+</body>
+</html>

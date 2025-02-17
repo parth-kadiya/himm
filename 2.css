@@ -1,0 +1,241 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Full screen height */
+    background-color: #f4f4f4;
+    overflow: hidden; /* Remove scrolling */
+}
+
+/* HEADER DESIGN */
+header {
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.top-bar {
+    background: orange;
+    height: 10px;
+    width: 100%;
+}
+
+.main-header {
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+    width: 120px;
+    height: auto;
+}
+
+/* MAIN CONTAINER */
+.main-container {
+    display: flex;
+    flex-grow: 1;
+    width: 100%;
+    overflow: hidden; /* Prevent scrolling */
+}
+
+/* SIDEBAR DESIGN */
+.sidebar {
+    width: 250px;
+    background: #025f30; /* Dark Green, Different from Footer */
+    color: white;
+    padding: 20px;
+    height: calc(100vh - 60px); /* Full height except header/footer */
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+.sidebar li {
+    padding: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 8px;
+    text-align: left;
+}
+
+.sidebar .active {
+    background: white;
+    color: orange;
+    font-weight: bold;
+}
+
+.sidebar .logout {
+    color: orange;
+}
+
+/* CONTENT AREA */
+.content-area {
+    flex: 1;
+    background: white;
+    padding: 25px; /* Increased padding */
+    margin-left: 0;
+    width: calc(100% - 270px);
+    overflow: auto; /* Only table scrolls if needed */
+}
+
+/* TABLE DESIGN */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    font-size: 18px; /* Increased font size */
+    font-weight: bold;
+}
+
+th {
+    color: orange;
+    text-align: left; /* Center aligned headings */
+    padding: 12px; /* More padding */
+    border-bottom: 2px solid black;
+    font-size: 18px; /* Increased font size */
+}
+
+td {
+    padding: 12px; /* More spacing */
+    text-align: left; /* Center aligned content */
+    border-bottom: 1px solid #ddd;
+    font-size: 16px; /* Increased font size */
+}
+
+/* BUTTON STYLING */
+.add-more {
+    background: orange;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px; /* Bigger button text */
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.add-more:hover {
+    background: darkorange;
+}
+
+/* Popup Form Design */
+.form-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;
+}
+
+.form-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+/* ✅ Updated Doctor Form */
+.doctor-form {
+    background: white;
+    padding: 15px; /* Kam kiya */
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 100;
+    width: 400px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.doctor-form input,
+.doctor-form select {
+    width: 100%; /* Sabhi input aur select elements ko same width dene ke liye */
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box; /* Ensure proper width calculation */
+}
+
+/* ✅ Updated Buttons */
+.submit-doctor,
+.close-form {
+    padding: 12px; /* More padding */
+    font-size: 16px; /* Bigger font */
+    border-radius: 8px; /* Rounded buttons */
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.submit-doctor {
+    background: #025f30; /* Sidebar ka color */
+    color: white;
+}
+
+.close-form {
+    background: red;
+    color: white;
+}
+
+.submit-doctor:hover {
+    background: #014122; /* Darker shade for hover effect */
+}
+
+.close-form:hover {
+    background: darkred;
+}
+
+.next-btn {
+    position: fixed;
+    bottom: 60px;  /* Footer ke upar thoda space dene ke liye */
+    right: 20px;   /* Bottom-right corner */
+    background: orange;
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.next-btn:hover {
+    background: darkorange;
+}
+
+/* FOOTER DESIGN */
+footer {
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.footer-content {
+    background: #003d1e;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.bottom-bar {
+    background: orange;
+    height: 10px;
+    width: 100%;
+}
